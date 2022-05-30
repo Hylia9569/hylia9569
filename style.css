@@ -1,0 +1,161 @@
+/* ! base Stile */
+
+body{font-family: 'Inter', sans-serif;font-size: 16px;}
+
+a{text-decoration: none;}
+
+h1, h2, h3, h4, h5, p{color: #000; padding-bottom: 30px;}
+
+p{line-height: 20px; color: #666; font-weight: 300;}
+
+.big-text{font-size: 50px; font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 30px;}
+.small-text{font-size: 20px;}
+
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+
+.button{padding: 18px 28px; background: #316bff; color: #000; display: inline-block; border-radius: 4px;}
+
+@media (max-width: 760px) {}
+
+/* ! Header */
+
+.header{
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  display: flex;
+  max-width: 1350px;
+}
+
+.logo{
+  z-index: 0;
+}
+
+.menu{
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  width: 100%;
+  z-index: 0;
+}
+
+.cta{}
+
+.menu li{display: inline-block;}
+.menu li a{color: #000; padding: 15px; display: block;}
+
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .cta{display: none;}
+
+  .menu{position: absolute; top: 0; right: -100%; background: #fff; height: 100vh; padding-top: 80px;}
+  .menu li{display: block;}
+
+  .menu_open{right: 0%;}
+
+    .hamburger{
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+    }
+
+  .hamburger span{
+      background: #000;
+      height: 3px;
+      width: 100%;
+      display: block;
+      margin-bottom: 5px;
+  }
+}
+
+/* ! Hero */
+
+.hero{
+  display: flex; width: 40%; height: 100vh;  align-items: center; transform: translateX(75%);
+  background: url('Hylia.png') no-repeat center center;
+  background-size: cover;
+}
+
+.hero_hero{
+  transform: translateY(center);
+  max-width: 1350px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.hero_hero h1,
+.hero_hero p{color: #73007a;}
+
+;}
+
+/* ! Poster */
+
+.poster{
+  display: flex;
+  height: 100vh;
+  border: 1px solid #red;
+  width: 100%;
+  align-items: center;
+}
+
+.poster_img{
+  width: 100%;
+  height: 100%;
+}
+
+.poster_img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.poster_content{
+  width: 100%;
+  padding: 50px;
+
+}
+
+@media (max-width: 768px) {
+  .poster{flex-wrap: wrap; height: auto;}
+  .poster_img img,
+  .poster_content{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
