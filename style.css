@@ -87,6 +87,10 @@ p{line-height: 20px; color: #666; font-weight: 300;}
   background-size: cover;
 }
 
+
+.hero h1,
+.hero p{color: #000;}
+
 .hero_hero{
   transform: translateY(center);
   max-width: 1350px;
@@ -96,10 +100,6 @@ p{line-height: 20px; color: #666; font-weight: 300;}
 
 .hero_hero h1,
 .hero_hero p{color: #73007a;}
-
-;}
-
-@media (max-width: 768px) {}
 
 /* ! Poster */
 
