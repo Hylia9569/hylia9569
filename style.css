@@ -82,7 +82,7 @@ p{line-height: 20px; color: #666; font-weight: 300;}
 /* ! Hero */
 
 .hero{
-  display: flex; width: 100%; height: 100vh;  align-items: center;
+  display: flex; width: 0%; height: 100vh;  align-items: center;
   background: url('Hylia.png') center center;
   background-size: cover;
 }
