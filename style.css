@@ -127,7 +127,7 @@ p {
   display: flex;
   height: 100vh;
   align-items: center;
-  background: url('hero.jpg') center center;
+  background: url('Hylia9569.png') center center;
   background-size: cover;
 }
 
@@ -143,7 +143,6 @@ p {
 .poster {
   display: flex;
   height: 100vh;
-  border: 1px solid red;
   width: 100%;
   align-items: center;
 }
@@ -178,4 +177,21 @@ p {
 /* Global Box Sizing */
 *, *:before, *:after {
   box-sizing: border-box;
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #316bff;
+  font-size: 20px;
+  text-decoration: none;
 }
